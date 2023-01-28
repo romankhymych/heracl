@@ -1,16 +1,11 @@
+import { FC } from "react";
 import { AppProps } from "next/app";
 import { MantineProvider } from "@mantine/core";
 
-export default function App(props: AppProps) {
-  const { Component, pageProps } = props;
+const App: FC<AppProps> = ({ Component, pageProps }) => (
+  <MantineProvider withGlobalStyles withNormalizeCSS>
+    <Component {...pageProps} />
+  </MantineProvider>
+);
 
-  return (
-    <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
-      theme={{ colorScheme: "dark" }}
-    >
-      <Component {...pageProps} />
-    </MantineProvider>
-  );
-}
+export default App;
