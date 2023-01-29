@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { Text } from "@mantine/core";
 import { Layout } from "@components/common";
+import { Text } from "@mantine/core";
+import { FC } from "react";
 
 const Home: FC = () => (
   <Layout>

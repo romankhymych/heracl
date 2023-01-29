@@ -1,6 +1,6 @@
-import { FC } from "react";
+import { Footer, Header } from "@components/common";
 import { AppShell } from "@mantine/core";
-import { Header, Footer } from "@components/common";
+import { FC } from "react";
 
 interface LayoutProps {
   children: React.ReactNode;
