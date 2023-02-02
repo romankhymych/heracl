@@ -5,18 +5,18 @@ import {
   Group,
   Header as HeaderCore,
   Paper,
-  Text,
   Transition,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { FC, useState } from "react";
+import Logo from "./Logo";
 
-const HEADER_HEIGHT = 60;
+const HEADER_HEIGHT = 52;
 
 const links = [
-  { link: "/about", label: "Über" },
-  { link: "/products", label: "Produkte" },
-  { link: "/contact", label: "Kontakt" },
+  { link: "/about", label: "About" },
+  { link: "/products", label: "Products" },
+  { link: "/contact", label: "Contact" },
 ];
 
 const useStyles = createStyles((theme) => ({
@@ -125,8 +125,7 @@ const Header: FC<HeaderProps> = () => {
   return (
     <HeaderCore height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
-        {/* <Logo /> */}
-        <Text>Heracl</Text>
+        <Logo />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
