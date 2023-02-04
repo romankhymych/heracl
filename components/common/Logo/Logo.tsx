@@ -1,14 +1,13 @@
 import Link from 'next/link';
-
-import HeraclLogo from './HeraclLogo';
 import useStyles from './Logo.styles';
+import LogoHeracl from './LogoHeracl';
 
 export default function Logo() {
   const { classes } = useStyles();
 
   return (
     <Link href="/" className={classes.logo} aria-label="Go to the home page">
-      <HeraclLogo />
+      <LogoHeracl />
     </Link>
   );
 }

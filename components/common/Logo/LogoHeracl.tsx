@@ -1,10 +1,10 @@
 import { useMantineTheme } from '@mantine/core';
 
-export interface HeraclLogoProps {
+interface LogoHeraclProps {
   size?: number;
 }
 
-export default function HeraclLogo({ size = 26 }: HeraclLogoProps) {
+export default function LogoHeracl({ size = 26 }: LogoHeraclProps) {
   const theme = useMantineTheme();
   const fillColor = theme.colorScheme === 'dark' ? theme.white : theme.black;
 
