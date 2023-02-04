@@ -1,10 +1,9 @@
 import { createStyles } from '@mantine/core';
-
-export const HEADER_HEIGHT = 52;
+import { HEADER_HEIGHT } from './Header';
 
 export default createStyles((theme) => ({
-  root: {
-    position: 'relative',
+  header: {
+    position: 'sticky',
     zIndex: 1,
   },
 
@@ -24,7 +23,7 @@ export default createStyles((theme) => ({
     },
   },
 
-  header: {
+  container: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',

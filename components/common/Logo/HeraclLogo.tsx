@@ -1,13 +1,18 @@
 import { useMantineTheme } from '@mantine/core';
 
-export default function HeraclLogo() {
+export interface HeraclLogoProps {
+  size?: number;
+}
+
+export default function HeraclLogo({ size = 26 }: HeraclLogoProps) {
   const theme = useMantineTheme();
+  const fillColor = theme.colorScheme === 'dark' ? theme.white : theme.black;
 
   return (
     <svg
-      fill={theme.colorScheme === 'dark' ? theme.white : theme.black}
-      height="26"
-      width="120"
+      fill={fillColor}
+      height={size}
+      viewBox="0 0 120 26"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M107.320801 25.4965325h4.2416832V-.00356773h-4.2416832z" />

@@ -1,5 +1,5 @@
 import { Footer, Header } from '@components/common';
-import { AppShell } from '@mantine/core';
+import { AppShell, Container } from '@mantine/core';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <AppShell header={<Header />} footer={<Footer />}>
-      {children}
+      <Container>{children}</Container>
     </AppShell>
   );
 }

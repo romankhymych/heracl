@@ -9,7 +9,9 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useState } from 'react';
-import useStyles, { HEADER_HEIGHT } from './Header.styles';
+import useStyles from './Header.styles';
+
+export const HEADER_HEIGHT = 52;
 
 const links = [
   { link: '/about', label: 'About' },
@@ -40,8 +42,8 @@ export default function Header() {
   ));
 
   return (
-    <HeaderCore height={HEADER_HEIGHT} mb={120} className={classes.root}>
-      <Container className={classes.header}>
+    <HeaderCore height={HEADER_HEIGHT} mb={120} className={classes.header}>
+      <Container className={classes.container}>
         <Logo />
         <Group spacing={5} className={classes.links}>
           {items}
