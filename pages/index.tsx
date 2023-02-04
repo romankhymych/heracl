@@ -1,11 +1,10 @@
-import { Layout } from "@components/common";
-import { Text } from "@mantine/core";
-import { FC } from "react";
+import { Layout } from '@components/common';
+import { Text } from '@mantine/core';
 
-const Home: FC = () => (
-  <Layout>
-    <Text>Welcome to Heracl</Text>
-  </Layout>
-);
-
-export default Home;
+export default function Home() {
+  return (
+    <Layout>
+      <Text>Welcome to Heracl</Text>
+    </Layout>
+  );
+}

@@ -1,9 +1,9 @@
-import { createGetInitialProps } from "@mantine/next";
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import { createGetInitialProps } from '@mantine/next';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 const getInitialProps = createGetInitialProps();
 
-class _Document extends Document {
+export default class _Document extends Document {
   static getInitialProps = getInitialProps;
 
   render() {
@@ -18,5 +18,3 @@ class _Document extends Document {
     );
   }
 }
-
-export default _Document;
