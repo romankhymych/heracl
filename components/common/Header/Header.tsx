@@ -8,7 +8,7 @@ import {
   Transition,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { useState } from 'react';
+import Link from 'next/link';
 import useStyles from './Header.styles';
 
 export const HEADER_HEIGHT = 52;
@@ -20,29 +20,17 @@ const links = [
 ];
 
 export default function Header() {
-  const [opened, { toggle, close }] = useDisclosure(false);
-  const [active, setActive] = useState(links[0].link);
+  const [opened, { toggle }] = useDisclosure(false);
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <a
-      key={link.label}
-      href={link.link}
-      className={cx(classes.link, {
-        [classes.linkActive]: active === link.link,
-      })}
-      onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
-        close();
-      }}
-    >
-      {link.label}
-    </a>
+    <Link key={link.label} href={link.link} legacyBehavior>
+      <a className={classes.link}>{link.label}</a>
+    </Link>
   ));
 
   return (
-    <HeaderCore height={HEADER_HEIGHT} mb={120} className={classes.header}>
+    <HeaderCore height={HEADER_HEIGHT} className={classes.header}>
       <Container className={classes.container}>
         <Logo />
         <Group spacing={5} className={classes.links}>

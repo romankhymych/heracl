@@ -5,6 +5,7 @@ import {
   Group,
   Text,
 } from '@mantine/core';
+import Link from 'next/link';
 import useStyles from './Footer.styles';
 
 const links = [
@@ -16,16 +17,11 @@ const links = [
 export default function Footer() {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Anchor<'a'>
-      color="dimmed"
-      key={link.label}
-      href={link.link}
-      sx={{ lineHeight: 1 }}
-      onClick={(event) => event.preventDefault()}
-      size="sm"
-    >
-      {link.label}
-    </Anchor>
+    <Link key={link.label} href={link.link} legacyBehavior>
+      <Anchor<'a'> color="dimmed" sx={{ lineHeight: 1 }} size="sm">
+        {link.label}
+      </Anchor>
+    </Link>
   ));
 
   return (
@@ -34,10 +30,6 @@ export default function Footer() {
         <Text>Copyright © 2023 Heracl. All rights reserved.</Text>
 
         <Group className={classes.links}>{items}</Group>
-
-        <Group spacing="xs" position="right" noWrap>
-          <Text>Change Language</Text>
-        </Group>
       </Container>
     </FooterCore>
   );
