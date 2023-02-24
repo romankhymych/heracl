@@ -1,4 +1,3 @@
-import { Footer, Header } from '@components/common';
 import { AppShell, Container } from '@mantine/core';
 
 interface LayoutProps {
@@ -7,7 +6,19 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <AppShell header={<Header />} footer={<Footer />}>
+    <AppShell
+      styles={(theme) => ({
+        main: {
+          backgroundColor: theme.colors.gray[1],
+          height: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+        },
+      })}
+    >
       <Container>{children}</Container>
     </AppShell>
   );

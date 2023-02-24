@@ -4,7 +4,7 @@ interface LogoHeraclProps {
   size?: number;
 }
 
-export default function LogoHeracl({ size = 26 }: LogoHeraclProps) {
+export default function LogoHeracl({ size = 40 }: LogoHeraclProps) {
   const theme = useMantineTheme();
   const fillColor = theme.colorScheme === 'dark' ? theme.white : theme.black;
 
