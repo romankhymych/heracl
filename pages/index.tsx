@@ -14,7 +14,7 @@ export default function Home() {
         We&apos;ll be back.
       </Title>
       <Text fz="xl" color="gray.7">
-        We&apos;re busy updating the Apple Store for you and will be back soon.
+        We&apos;re busy updating the Heracl page for you and will be back soon.
       </Text>
     </>
   );
