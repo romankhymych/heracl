@@ -1,10 +1,14 @@
 import { useMantineTheme } from '@mantine/core';
 
+const DEFAULT_LOGO_SIZE = 26;
+
 interface LogoHeraclProps {
   size?: number;
 }
 
-export default function LogoHeracl({ size = 26 }: LogoHeraclProps) {
+export default function LogoHeracl({
+  size = DEFAULT_LOGO_SIZE,
+}: LogoHeraclProps) {
   const theme = useMantineTheme();
   const fillColor = theme.colorScheme === 'dark' ? theme.white : theme.black;
 

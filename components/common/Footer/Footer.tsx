@@ -11,7 +11,6 @@ import useStyles from './Footer.styles';
 const links = [
   { link: '/privacy', label: 'Privacy Policy' },
   { link: '/terms', label: 'Terms of Use' },
-  { link: '/cookies', label: 'Cookies' },
 ];
 
 export default function Footer() {

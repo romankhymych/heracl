@@ -4,11 +4,7 @@ import { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
-      // theme={{ colorScheme: 'dark' }}
-    >
+    <MantineProvider withGlobalStyles withNormalizeCSS>
       <Layout>
         <Component {...pageProps} />
       </Layout>
