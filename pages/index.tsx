@@ -1,5 +1,5 @@
 import { Logo } from '@components/common';
-import { Text, Title } from '@mantine/core';
+import { Anchor, Text, Title } from '@mantine/core';
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <Text fz="xl" color="gray.7">
         We&apos;re busy updating the Heracl page for you and will be back soon.
       </Text>
+      <Anchor href="mailto:contact@heracl.com">contact@heracl.com</Anchor>
     </>
   );
 }
