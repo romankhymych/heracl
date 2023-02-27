@@ -1,5 +1,6 @@
 import { Logo } from '@components/common';
 import {
+  Anchor,
   Burger,
   Container,
   Group,
@@ -20,13 +21,18 @@ const links = [
 ];
 
 export default function Header() {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { close, toggle }] = useDisclosure(false);
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <Link key={link.label} href={link.link} legacyBehavior>
-      <a className={classes.link}>{link.label}</a>
-    </Link>
+    <Anchor
+      component={Link}
+      className={classes.link}
+      key={link.label}
+      href={link.link}
+    >
+      {link.label}
+    </Anchor>
   ));
 
   return (
@@ -44,9 +50,14 @@ export default function Header() {
           size="sm"
         />
 
-        <Transition transition="pop-top-right" duration={200} mounted={opened}>
+        <Transition transition="pop-top-right" mounted={opened}>
           {(styles) => (
-            <Paper className={classes.dropdown} withBorder style={styles}>
+            <Paper
+              className={classes.dropdown}
+              withBorder
+              style={styles}
+              onClick={close}
+            >
               {items}
             </Paper>
           )}

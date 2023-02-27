@@ -16,11 +16,16 @@ const links = [
 export default function Footer() {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Link key={link.label} href={link.link} legacyBehavior>
-      <Anchor<'a'> color="dimmed" sx={{ lineHeight: 1 }} size="sm">
-        {link.label}
-      </Anchor>
-    </Link>
+    <Anchor
+      component={Link}
+      color="dimmed"
+      sx={{ lineHeight: 1 }}
+      size="sm"
+      key={link.label}
+      href={link.link}
+    >
+      {link.label}
+    </Anchor>
   ));
 
   return (

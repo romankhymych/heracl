@@ -10,11 +10,10 @@ export default function LogoHeracl({
   size = DEFAULT_LOGO_SIZE,
 }: LogoHeraclProps) {
   const theme = useMantineTheme();
-  const fillColor = theme.colorScheme === 'dark' ? theme.white : theme.black;
 
   return (
     <svg
-      fill={fillColor}
+      fill={theme.black}
       height={size}
       viewBox="0 0 120 26"
       xmlns="http://www.w3.org/2000/svg"
