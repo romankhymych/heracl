@@ -1,0 +1,68 @@
+{
+  "privacy": {
+    "bullets": [
+      "Visit our website at https://www.heracl.com, or any website of ours that links to this privacy notice",
+      "Engage with us in other related ways, including any sales, marketing, or events"
+    ],
+    "description": "This privacy notice for Heracl (\"Company\", \"we\", \"us\", or \"our\"), describes how and why we might collect, store, use, and/or share (\"process\") your information when you use our services (\"Services\"), such as when you:",
+    "lastUpdated": "Last updated March 01, 2023",
+    "readingNotice": "Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at privacy@heracl.com.",
+    "summaryOfKeyPoints": {
+      "description": "This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. You can also click here to go directly to our table of contents.",
+      "fullNoticeReview": {
+        "content": "Click here to review the notice in full.",
+        "title": "Want to learn more about what we does with any information we collect?"
+      },
+      "informationProcessingMethods": {
+        "content": "We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click here to learn more.",
+        "title": "How do we process your information?"
+      },
+      "informationSecurity": {
+        "content": "We have organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cyber criminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Click here to learn more.",
+        "title": "How do we keep your information safe?"
+      },
+      "personalInformationProcessing": {
+        "content": "When you visit, use, or navigate our Services, we may process personal information depending on how you interact with Heracl and the Services, the choices you make, and the products and features you use. Click here to learn more.",
+        "title": "What personal information do we process?"
+      },
+      "personalInformationSharing": {
+        "content": "We may share information in specific situations and with specific third parties. Click here to learn more.",
+        "title": "In what situations and with which parties do we share personal information?"
+      },
+      "rightsExercise": {
+        "content": "The easiest way to exercise your rights is by filling out our data subject request form available here, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.",
+        "title": "How do you exercise your rights?"
+      },
+      "sensitivePersonalInformationProcessing": {
+        "content": "We do not process sensitive personal information.",
+        "title": "Do we process any sensitive personal information?"
+      },
+      "thirdPartyInformationReceiving": {
+        "content": "We do not receive any information from third parties.",
+        "title": "Do we receive any information from third parties?"
+      },
+      "title": "Summary of Key Points",
+      "yourPrivacyRights": {
+        "content": "Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Click here to learn more.",
+        "title": "What are your rights?"
+      }
+    },
+    "title": "Heracl Privacy Policy",
+    "whatInformationDoWeCollect": {
+      "title": "What Information Do We Collect?",
+      "personalInformationYouDiscloseToUs": "Personal information you disclose to us",
+      "inShort": "In Short: We collect personal information that you provide to us.",
+      "description": "We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.",
+      "personalInformationProvidedByYou": {
+        "title": "Personal Information Provided by You.",
+        "content": "The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:"
+      },
+      "bullets": ["names", "email addresses"],
+      "sensitiveInformation": {
+        "title": "Sensitive Information.",
+        "content": "We do not process sensitive information."
+      },
+      "allPersonalInformation": "All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information."
+    }
+  }
+}
