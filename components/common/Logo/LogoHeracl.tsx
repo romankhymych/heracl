@@ -6,9 +6,13 @@ interface LogoHeraclProps {
   size?: number;
 }
 
+<<<<<<< HEAD
+export default function LogoHeracl({ size = 40 }: LogoHeraclProps) {
+=======
 export default function LogoHeracl({
   size = DEFAULT_LOGO_SIZE,
 }: LogoHeraclProps) {
+>>>>>>> dev
   const theme = useMantineTheme();
 
   return (
