@@ -1,4 +1,4 @@
-import { Layout } from '@components/common';
+import { Layout } from '@/components';
 import { MantineProvider } from '@mantine/core';
 import { Analytics } from '@vercel/analytics/react';
 import { AppProps } from 'next/app';
