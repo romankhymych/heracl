@@ -1,6 +1,7 @@
 import { Logo } from '@components/common';
 import { Anchor, Text, Title } from '@mantine/core';
 
+
 export default function Home() {
   return (
     <>
