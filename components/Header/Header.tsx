@@ -1,10 +1,10 @@
-import { Logo } from '@components/common';
+// import { Logo } from '../Logo/Logo';
 import {
   Anchor,
   Burger,
   Container,
   Group,
-  Header as HeaderCore,
+  // Header as HeaderCore,
   Paper,
   Transition,
 } from '@mantine/core';
@@ -25,44 +25,29 @@ export default function Header() {
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <Anchor
-      component={Link}
-      className={classes.link}
-      key={link.label}
-      href={link.link}
-    >
+    <Anchor component={Link} className={classes.link} key={link.label} href={link.link}>
       {link.label}
     </Anchor>
   ));
 
   return (
-    <HeaderCore height={HEADER_HEIGHT} className={classes.header}>
-      <Container className={classes.container}>
-        <Logo />
-        <Group spacing={5} className={classes.links}>
+    // <HeaderCore height={HEADER_HEIGHT} className={classes.header}>
+    <Container className={classes.container}>
+      {/* <Logo /> */}
+      {/* <Group spacing={5} className={classes.links}>
           {items}
-        </Group>
+        </Group> */}
 
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          className={classes.burger}
-          size="sm"
-        />
+      <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
 
-        <Transition transition="pop-top-right" mounted={opened}>
-          {(styles) => (
-            <Paper
-              className={classes.dropdown}
-              withBorder
-              style={styles}
-              onClick={close}
-            >
-              {items}
-            </Paper>
-          )}
-        </Transition>
-      </Container>
-    </HeaderCore>
+      <Transition transition="pop-top-right" mounted={opened}>
+        {(styles) => (
+          <Paper className={classes.dropdown} withBorder style={styles} onClick={close}>
+            {items}
+          </Paper>
+        )}
+      </Transition>
+    </Container>
+    // </HeaderCore>
   );
 }

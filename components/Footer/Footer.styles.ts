@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@mantine/emotion';
 
 export default createStyles((theme) => ({
   footer: {
@@ -13,15 +13,15 @@ export default createStyles((theme) => ({
     padding: `${theme.spacing.md}px ${theme.spacing.md}px`,
     fontSize: theme.fontSizes.sm,
 
-    [theme.fn.smallerThan('sm')]: {
-      flexDirection: 'column',
-    },
+    // [theme.fn.smallerThan('sm')]: {
+    //   flexDirection: 'column',
+    // },
   },
 
   links: {
-    [theme.fn.smallerThan('sm')]: {
-      marginTop: theme.spacing.lg,
-      marginBottom: theme.spacing.sm,
-    },
+    // [theme.fn.smallerThan('sm')]: {
+    //   marginTop: theme.spacing.lg,
+    //   marginBottom: theme.spacing.sm,
+    // },
   },
 }));

@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@mantine/emotion';
 import { HEADER_HEIGHT } from './Header';
 
 export default createStyles((theme) => ({
@@ -13,9 +13,9 @@ export default createStyles((theme) => ({
     height: '100%',
   },
   links: {
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
-    },
+    // [theme.fn.smallerThan('sm')]: {
+    //   display: 'none',
+    // },
   },
   link: {
     display: 'block',
@@ -27,15 +27,15 @@ export default createStyles((theme) => ({
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
-    [theme.fn.smallerThan('sm')]: {
-      borderRadius: 0,
-      padding: theme.spacing.md,
-    },
+    // [theme.fn.smallerThan('sm')]: {
+    //   borderRadius: 0,
+    //   padding: theme.spacing.md,
+    // },
   },
   burger: {
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
-    },
+    // [theme.fn.largerThan('sm')]: {
+    //   display: 'none',
+    // },
   },
   dropdown: {
     position: 'absolute',
@@ -48,8 +48,8 @@ export default createStyles((theme) => ({
     borderTopWidth: 0,
     overflow: 'hidden',
 
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
-    },
+    // [theme.fn.largerThan('sm')]: {
+    //   display: 'none',
+    // },
   },
 }));

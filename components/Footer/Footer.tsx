@@ -1,10 +1,4 @@
-import {
-  Anchor,
-  Container,
-  Footer as FooterCore,
-  Group,
-  Text,
-} from '@mantine/core';
+import { Anchor, Container, Group, Text } from '@mantine/core';
 import Link from 'next/link';
 import useStyles from './Footer.styles';
 
@@ -18,8 +12,8 @@ export default function Footer() {
   const items = links.map((link) => (
     <Anchor
       component={Link}
-      color="dimmed"
-      sx={{ lineHeight: 1 }}
+      // color="dimmed"
+      // sx={{ lineHeight: 1 }}
       size="sm"
       key={link.label}
       href={link.link}
@@ -29,12 +23,12 @@ export default function Footer() {
   ));
 
   return (
-    <FooterCore height={60} className={classes.footer}>
-      <Container className={classes.inner}>
-        <Text>Copyright © 2023 Heracl. All rights reserved.</Text>
+    // <FooterCore height={60} className={classes.footer}>
+    <Container className={classes.inner}>
+      <Text>Copyright © 2024 Heracl. All rights reserved.</Text>
 
-        <Group className={classes.links}>{items}</Group>
-      </Container>
-    </FooterCore>
+      <Group className={classes.links}>{items}</Group>
+    </Container>
+    // </FooterCore>
   );
 }
